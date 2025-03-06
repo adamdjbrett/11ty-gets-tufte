@@ -109,7 +109,9 @@ To create epigraph, you need to use a shortcode ,to make you can simply paste in
 Implementation example for epigraph:
 
 ```
- epigraph "Hello this is content area" , "And this is footer area"
+{% raw %}
+{% epigraph "Hello this is content area" , "And this is footer area" %}
+{% endraw %}
 ```
 
 Information:
@@ -135,7 +137,9 @@ To create epigraph, you need to use a shortcode ,to make you can simply paste in
 Implementation example for epigraph:
 
 ```
- epigraphlink "Hello this is content area" , "And this is footer area" , "Text for URL" , "http://example.com"
+{% raw %}
+{% epigraphlink "Hello this is content area" , "And this is footer area" , "Text for URL" , "http://example.com"%}
+{% endraw %}
 ```
 
 Information:
@@ -163,7 +167,9 @@ To create blockquote, you need to use a shortcode ,to make you can simply paste 
 Implementation example for blockquote:
 
 ```
- blockquote "Hello this is content area" , "And this is footer area"
+{% raw %}
+{% blockquote "Hello this is content area" , "And this is footer area" %}
+{% endraw %}
 ```
 
 Information:
@@ -189,7 +195,9 @@ To create blockquote with URL Link, you need to use a shortcode ,to make you can
 Implementation example for blockquote with link:
 
 ```
- blockquotelink "Hello this is content area" , "And this is footer area" , "Text url link info" , "https://example.com"
+{% raw %}
+{% blockquotelink "Hello this is content area" , "And this is footer area" , "Text url link info" , "https://example.com" %}
+{% endraw %}
 ```
 
 Information:
@@ -217,7 +225,9 @@ To create notes, you need to use a shortcode ,to make you can simply paste into 
 Implementation example for notes:
 
 ```
- notes "1s", "This is a margin note. Notice there isn’t a number preceding the note."
+{% raw %}
+{% notes "1s", "This is a margin note. Notice there isn’t a number preceding the note." %}
+{% endraw %}
 ```
 
 PS: Do not use the same ID's in one article
@@ -275,7 +285,9 @@ To create sidenotes internal link with id link same like table of content, you n
 Implementation example for sidenotes with internal link:
 
 ```
-sidenoteinternal "1bas","Title" ,"Side Notes Info", "Content in here.." 
+{% raw %}
+{% sidenoteinternal "1bas","Title" ,"Side Notes Info", "Content in here.." %}
+{% endraw %}
 ```
 
 Information: 
@@ -306,7 +318,9 @@ To create sidenotes external link , you need to use a shortcode that you can sim
 Implementation example for sidenotes with external link:
 
 ```
-sidenoteexternal "1dcs","Title" ,"Side Notes Info", "Content in here.." , "Text for url" , "https://www.example.com" 
+{% raw %}
+{% sidenoteexternal "1dcs","Title" ,"Side Notes Info", "Content in here.." , "Text for url" , "https://www.example.com" %}
+{% endraw %}
 ```
 
 Information: 
@@ -336,7 +350,9 @@ You can see the demo on `content/blog/side-notes-external.md` or [on this page](
 To create notes with images, you can use the shortcode as below, and paste it into your markdown article.
 
 ```
-notesimage "2s", "/img/myimage.png" , "alt of image" , "content in here..."
+{% raw %}
+{% notesimage "2s", "/img/myimage.png" , "alt of image" , "content in here..." %}
+{% endraw %}
 ```
 
 Information: 
@@ -379,7 +395,9 @@ If you want to use a full image, you can use a shortcode with the following form
 
 
 ```
-fullimage "/img/myimage.png", "alt image"
+{% raw %}
+{% fullimage "/img/myimage.png", "alt image" %}
+{% endraw %}
 ```
 
 Information:
@@ -401,7 +419,9 @@ You can see the demo on `content/blog/notes-image.md` or [on this page](/blog/im
 If you need to embed a video then you can use the following shortcode.
 
 ```
-videos "https://www.youtube.com/embed/hJGaMGmuZEc" , "title of your video"
+{% raw %}
+{% videos "https://www.youtube.com/embed/hJGaMGmuZEc" , "title of your video" %}
+{% endraw %}
 ```
 
 Information:
@@ -434,4 +454,3 @@ If you need help or want to consult about your project, don't hesitate to contac
 Developer : [Adam DJ Brett](https://adamdjbrett.com)
 Website: [www.adamdjbrett.com](https://adamdjbrett.com)
 Email: [info@adamdjbrett.com](mailto:info@adamdjbrett.com)
-
