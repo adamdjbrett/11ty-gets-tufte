@@ -1,3 +1,6 @@
+# 11ty output directory
+_site/
+
 # Logs
 logs
 *.log
@@ -6,9 +9,52 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
+
+# Lock files (uncomment if you want to ignore them)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# macOS
 .DS_Store
-_site/
-package-lock.json
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
@@ -44,6 +90,19 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+
+# IDE and Editor directories
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+.vscode-test
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
@@ -131,3 +190,18 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# 11ty cache
+.cache/
+.eleventy-cache/
+
+# Pagefind search index (if using Pagefind)
+# Uncomment if you don't want to commit search index
+# pagefind/
+
+# Local Netlify folder
+.netlify/
+
+# Vercel
+.vercel/
+package-lock.json
