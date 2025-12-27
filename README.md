@@ -25,3 +25,10 @@ Developed by [Adam DJ Brett](https://adamdjbrett.com)
 
 [Follow on Github](https://github.com/adamdjbrett)
 
+---
+
+### Change Log: 
+
+27 Dec 2025 - req by [@xtbqimuxmvtx](https://github.com/xtbqimuxmvtx) on [#7](https://github.com/adamdjbrett/11ty-gets-tufte/issues/7)
++ Add dark light mode functional
++ Remove unused code
