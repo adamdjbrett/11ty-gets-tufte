@@ -1,24 +1,5 @@
 <footer>
 <p class="text-center text-small">{{metadata.footer.text1}} <a href="https://www.11ty.dev/">{{ eleventy.generator }}</a> {{metadata.footer.text2}} <a href="{{metadata.footer.text3_url}}">{{metadata.footer.text3}}</a></p>
 </footer>
-<script>
-
-  function myMenu() {
-    const dropdown = document.getElementById('myMenu') 
-    dropdown.classList.toggle('show')
-  }
-
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.hamburger')) {
-      var dropdowns = document.getElementsByClassName('dropdown-content')
-      var i
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i]
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show')
-        }
-      }
-    }
-  }
-</script>
+{%- js %}{% include "public/js/index.js" %}{% endjs %}
+<script type="module" src="{% getBundleFileUrl "js" %}"></script>
