@@ -36,13 +36,14 @@
 		"luxon": "^3.5.0",
 		"markdown-it": "^14.1.0",
 		"markdown-it-attrs": "^4.3.1",
+		"pagefind": "^1.4.0",
 		"zod": "^3.23.8",
 		"zod-validation-error": "^3.3.1"
 	},
 	"dependencies": {
-		"markdown-it": "^14.1.0",
-		"markdown-it-anchor": "^9.2.0",
+		"@zachleat/heading-anchors": "^1.0.1",
 		"eleventy-plugin-toc": "^1.1.5",
-		"@zachleat/heading-anchors": "^1.0.1"
+		"markdown-it": "^14.1.0",
+		"markdown-it-anchor": "^9.2.0"
 	}
 }
