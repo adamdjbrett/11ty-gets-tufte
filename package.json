@@ -1,49 +1,51 @@
 {
-	"name": "11ty-gets-tufte",
-	"version": "1.0.1",
-	"description": "A tufte-css for 11ty Eleventy projects.",
-	"type": "module",
-	"scripts": {
-		"build": "npx @11ty/eleventy",
-		"build-nocolor": "cross-env NODE_DISABLE_COLORS=1 npx @11ty/eleventy",
-		"build-ghpages": "npx @11ty/eleventy --pathprefix=/11ty-gets-tufte",
-		"start": "npx @11ty/eleventy --serve --quiet",
-		"start-ghpages": "npx @11ty/eleventy --pathprefix=/11ty-gets-tufte --serve --quiet",
-		"debug": "cross-env DEBUG=Eleventy* npx @11ty/eleventy",
-		"debugstart": "cross-env DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
-		"benchmark": "cross-env DEBUG=Eleventy:Benchmark* npx @11ty/eleventy"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/adamdjbrett/11ty-gets-tufte.git"
-	},
-	"author": {
-		"name": "Adam DJ Brett",
-		"email": "info@adamdjbrett.com",
-		"url": "https://adamdjbrett.com/"
-	},
-	"license": "MIT",
-	"engines": {
-		"node": ">=20"
-	},
-	"devDependencies": {
-		"@11ty/eleventy": "^3.0.0",
-		"@11ty/eleventy-img": "^5.0.0",
-		"@11ty/eleventy-navigation": "^0.3.5",
-		"@11ty/eleventy-plugin-rss": "^2.0.2",
-		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
-		"cross-env": "^7.0.3",
-		"luxon": "^3.5.0",
-		"markdown-it": "^14.1.0",
-		"markdown-it-attrs": "^4.3.1",
-		"pagefind": "^1.4.0",
-		"zod": "^3.23.8",
-		"zod-validation-error": "^3.3.1"
-	},
-	"dependencies": {
-		"@zachleat/heading-anchors": "^1.0.1",
-		"eleventy-plugin-toc": "^1.1.5",
-		"markdown-it": "^14.1.0",
-		"markdown-it-anchor": "^9.2.0"
-	}
+  "name": "11ty-gets-tufte",
+  "version": "1.0.1",
+  "description": "A tufte-css for 11ty Eleventy projects.",
+  "type": "module",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "build-nocolor": "cross-env NODE_DISABLE_COLORS=1 npx @11ty/eleventy",
+    "build-ghpages": "npx @11ty/eleventy --pathprefix=/11ty-gets-tufte",
+    "start": "npx @11ty/eleventy --serve --quiet",
+    "start-ghpages": "npx @11ty/eleventy --pathprefix=/11ty-gets-tufte --serve --quiet",
+    "debug": "cross-env DEBUG=Eleventy* npx @11ty/eleventy",
+    "debugstart": "cross-env DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
+    "benchmark": "cross-env DEBUG=Eleventy:Benchmark* npx @11ty/eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/adamdjbrett/11ty-gets-tufte.git"
+  },
+  "author": {
+    "name": "Adam DJ Brett",
+    "email": "info@adamdjbrett.com",
+    "url": "https://adamdjbrett.com/"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=24",
+    "npm": ">=11.14.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "@11ty/eleventy-img": "^5.0.0",
+    "@11ty/eleventy-navigation": "^0.3.5",
+    "@11ty/eleventy-plugin-rss": "^2.0.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "cross-env": "^7.0.3",
+    "luxon": "^3.5.0",
+    "markdown-it": "^14.1.0",
+    "markdown-it-attrs": "^4.3.1",
+    "pagefind": "^1.4.0",
+    "zod": "^3.23.8",
+    "zod-validation-error": "^3.3.1"
+  },
+  "dependencies": {
+    "@zachleat/heading-anchors": "^1.0.1",
+    "eleventy-plugin-toc": "^1.1.5",
+    "markdown-it": "^14.1.0",
+    "markdown-it-anchor": "^9.2.0"
+  },
+  "packageManager": "npm@11.14.0"
 }
